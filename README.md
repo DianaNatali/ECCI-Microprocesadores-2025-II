@@ -17,7 +17,7 @@ El microcontrolador de referencia para el curso será el ```PIC18F45K22```, un d
 
 Para más detalles sobre el microcontrolador utilizado en el curso, consultar la siguiente guía:
 
-- [Guía introducturia al PIC18F45K22 con PICkit 3 y MPLAB X IDE](/tutorials/Tutorial_PIC18F45K22.md)
+- [Guía introducturia al PIC18F45K22 con PICkit 3 y MPLAB X IDE](/tutoriales/Tutorial_PIC18F45K22.md)
 
 ## Cronograma
 
