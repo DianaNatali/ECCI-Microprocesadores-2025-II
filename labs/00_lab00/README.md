@@ -102,7 +102,7 @@ https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers
 
     * **Free** → gratis, con optimizaciones limitadas.
 
-    * **Pro (Trial)** → gratis por 60 días con optimizaciones avanzadas.
+    * **Pro (Trial)** → gratis por $60$ días con optimizaciones avanzadas.
 
 * Completar la instalación.
 
