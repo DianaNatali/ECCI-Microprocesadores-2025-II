@@ -32,7 +32,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   <tr>
     <td>1-2</td>
     <td>Instalación de herramientas</td>
-    <td><a href="/labs/0_lab00/README.md">lab00</a></td>
+    <td><a href="/labs/00_lab00/README.md">lab00</a></td>
     <td>-</td>
     <td>-</td>
   </tr>
