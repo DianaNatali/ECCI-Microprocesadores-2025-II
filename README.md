@@ -40,7 +40,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td>1-2</td>
     <td>Blinker</td>
     <td><a href="/labs/01_lab01/README.md">lab01</a></td>
-    <td></td>
+    <td><a href=https://classroom.github.com/a/WPx70dFx>Link</a></td>
     <td> 11 de agosto</td>
   </tr>
   </table>
