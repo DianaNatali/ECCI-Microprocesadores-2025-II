@@ -28,6 +28,8 @@
 
     ![pictest](/labs/figs/lab01/pictest.jpg)
 
+    ![pic](/labs/figs/lab01/pic.png)
+
 2. Aceptar la tarea en Github Classroom.
 
 3. Abrir MPLAB X y crear un nuevo proyecto para el ```PIC18F45K22```. Con el código proporcionado en Github Classroom crear un archivo ```main.c``` o ```newmain.c``` en la carpeta ```Source Files```. 
