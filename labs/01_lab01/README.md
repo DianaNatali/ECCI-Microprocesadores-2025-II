@@ -26,7 +26,6 @@
 
 1. Realizar el montaje monstrado en la siguiente figura:
 
-    ![pictest](/labs/figs/lab01/pictest.jpg)
 
     ![pic](/labs/figs/lab01/pic.png)
 
