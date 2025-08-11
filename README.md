@@ -36,4 +36,12 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td>-</td>
     <td>-</td>
   </tr>
+  <tr>
+    <td>1-2</td>
+    <td>Blinker</td>
+    <td><a href="/labs/01_lab01/README.md">lab01</a></td>
+    <td></td>
+    <td> 11 de agosto</td>
+  </tr>
   </table>
+
