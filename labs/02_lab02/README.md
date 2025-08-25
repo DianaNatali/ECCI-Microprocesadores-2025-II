@@ -8,7 +8,7 @@
 
 #### 3. [Fundamento teórico](#3-fundamento-teórico)
 
-#### 4. [Prodedimiento](#4-prodedimiento)
+#### 4. [Prodedimiento]()
 
 #### 5. [Entregables]()
 
@@ -140,7 +140,7 @@ La elección entre usar un oscilador interno o externo se controla mediante el b
 
 Permite reducir la frecuencia de ```HFINTOSC```. Los valores posibles son:
 
-8 MHz → 4 MHz → 2 MHz → 1 MHz → 500 kHz → 250 kHz → 125 kHz → 31 kHz.
+$8$ MHz → $4$ MHz → $2$ MHz → $1$ MHz → $500$ kHz → $250$ kHz → $125$ kHz → $31$ kHz.
 
 La selección se hace con los bits ```IRCF2:IRCF0``` del registro ```OSCCON```.
 
@@ -169,13 +169,13 @@ El oscilador interno de un microcontrolador suele ser suficiente para aplicacion
 
 Por eso a veces se usa un cristal externo (ej. 16 MHz, 20 MHz) para tener una frecuencia mucho más exacta.
 
-## Procedimiento
+## 4. Procedimiento
 
 ### Parte 1. 
 
 1. Aceptar la tarea en GitHub Classroom.
 
-2. Crear proyecto en ```MPLAB X``` para PIC18F45K22 (o referencia seleccionada), agregar el ```main.c``` base del ítem anterior.
+2. Crear proyecto en ```MPLAB X``` para PIC18F45K22 (o referencia seleccionada) y agregar el ```main.c``` base del ítem anterior.
 
 3. Realizar el montaje del cristal con sus capacitores y el circuito mínimo de la figura 2. 
 
@@ -189,9 +189,8 @@ Por eso a veces se usa un cristal externo (ej. 16 MHz, 20 MHz) para tener una fr
 
 8. Deriva térmica:
 
-    - Con ```INTOSC```, calentar levemente el encapsulado (con la mano o aire tibio) y observa cambio de frecuencia en el osciloscopio.
+    - Calentar levemente el encapsulado (con la mano o aire tibio) y observa cambio de frecuencia en el osciloscopio.
 
-    - Repetir con cristal y comparar estabilidad.
 
 9. Comparar la frecuencia medida en el osciloscopio con la frecuencia teórica esperada (ej. $500$ Hz).
 
@@ -201,6 +200,14 @@ Por eso a veces se usa un cristal externo (ej. 16 MHz, 20 MHz) para tener una fr
 \text{Error (\%)} = \frac{f_{medida} - f_{teórica}}{f_{teórica}} \times 100
 \]
 
-    - Registrar el error obtenido para el caso del oscilador interno (```INTOSC```) y para el cristal externo.
 
-    - Analizar cuál fuente de reloj presenta menor error y por qué.
+## 5. Entregables
+
+1. Realice las partes 1, 2 y 3 mencionadas en el procedimiento y presente en clase las implementaciones de cada una al docente.
+
+2. Realice la respectiva documentación de la implementación llevada a cabo en su respectivo repositorio en Github Classroom.
+
+
+## 6. Referencias
+
+**[1]**
