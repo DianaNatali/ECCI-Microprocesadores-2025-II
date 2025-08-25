@@ -173,13 +173,17 @@ Por eso a veces se usa un cristal externo (ej. 16 MHz, 20 MHz) para tener una fr
 
 ## 4. Procedimiento
 
-### Parte 1. 
-
 1. Aceptar la tarea en GitHub Classroom.
 
 2. Crear proyecto en ```MPLAB X``` para PIC18F45K22 (o referencia seleccionada) y agregar el ```main.c``` base del ítem anterior.
 
-3. Realizar el montaje del cristal con sus capacitores y el circuito mínimo de la figura 2. 
+3. Realizar los montajes:
+
+    * Con oscilador externo con sus capacitores y el circuito mínimo de la [figura 2](https://github.com/DianaNatali/ECCI-Microprocesadores-2025-II/blob/main/labs/figs/lab02/external1.png). 
+
+    * Configurando el oscilador interno.
+
+    * Con circuito RC como se muestra en la [figura 3](https://github.com/DianaNatali/ECCI-Microprocesadores-2025-II/blob/main/labs/figs/lab02/RC.png).
 
 4. Compilar y grabar el programa en el PIC.
 
@@ -205,7 +209,7 @@ Por eso a veces se usa un cristal externo (ej. 16 MHz, 20 MHz) para tener una fr
 
 ## 5. Entregables
 
-1. Realice las partes 1, 2 y 3 mencionadas en el procedimiento y presente en clase las implementaciones de cada una al docente.
+1. Realice el [procedimiento](#4-procedimiento) y presente en clase las implementaciones de cada una al docente.
 
 2. Realice la respectiva documentación de la implementación llevada a cabo en su respectivo repositorio en Github Classroom.
 
