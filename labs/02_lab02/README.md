@@ -8,9 +8,11 @@
 
 #### 3. [Fundamento teórico](#3-fundamento-teórico)
 
-#### 4. [Prodedimiento]()
+#### 4. [Procedimiento](#4-procedimiento)
 
-#### 5. [Entregables]()
+#### 5. [Entregables](#5-entregables)
+
+#### 6. [Referencias](#6-referencias)
 
 
 
