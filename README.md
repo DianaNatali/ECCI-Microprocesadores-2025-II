@@ -45,9 +45,9 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   </tr>
   <tr>
     <td>3-4</td>
-    <td>Oscilador</td>
+    <td>Osciladores</td>
     <td><a href="/labs/02_lab02/README.md">lab02</a></td>
-    <td><a href=https://classroom.github.com/a/TkxqXj5G>Link</a></td>
+    <td><a href=https://classroom.github.com/a/nqXAoXAE>Link</a></td>
     <td> 01 de septiembre</td>
   </tr>
   </table>
