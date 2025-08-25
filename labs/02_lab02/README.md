@@ -77,7 +77,7 @@ Un oscilador es necesario porque en casi todos los sistemas electrónicos (micro
 En la imagen se muestra la arquitectura de selección de reloj en el microcontrolador ```PIC18F45K22```. En ella se evidencia cómo el microcontrolador puede obtener la señal de reloj, ya sea desde una fuente externa o interna, y cómo se controla esta selección.
 
 <p align="center">
-<img src="/labs/figs/lab02/oscillator.png" alt="esp11" width="380">
+<img src="/labs/figs/lab02/oscillator.png" alt="esp11" width="450">
 </p>
 <p align="center">
   Fig 1. Arquitectura de selección de reloj <b>[1]</b>
@@ -103,7 +103,7 @@ Por lo tanto, puede funcionar en distintos modos según el cristal o circuito us
 * **HS** (High-Speed Crystal): cristales de alta frecuencia (hasta decenas de MHz).
 
 <p align="center">
-<img src="/labs/figs/lab02/external1.png" alt="osc1" width="350">
+<img src="/labs/figs/lab02/external1.png" alt="osc1" width="450">
 </p>
 <p align="center">
   Fig 2. Oscilador externo (modos LP, XT y HS) <b>[1]</b>
@@ -112,7 +112,7 @@ Por lo tanto, puede funcionar en distintos modos según el cristal o circuito us
 * **RC**: oscilador empleando un circuito RC externo.
 
 <p align="center">
-<img src="/labs/figs/lab02/RC.png" alt="osc2" width="380">
+<img src="/labs/figs/lab02/RC.png" alt="osc2" width="450">
 </p>
 <p align="center">
   Fig 3. Oscilador externo modo RC <b>[1]</b>
@@ -121,7 +121,7 @@ Por lo tanto, puede funcionar en distintos modos según el cristal o circuito us
 * **EC**: señal de reloj externa aplicada directamente.
 
 <p align="center">
-<img src="/labs/figs/lab02/external2.png" alt="osc2" width="350">
+<img src="/labs/figs/lab02/external2.png" alt="osc2" width="450">
 </p>
 <p align="center">
   Fig 4. Señal externa <b>[1]</b>
@@ -153,7 +153,7 @@ La selección se hace con los bits ```IRCF2:IRCF0``` del registro ```OSCCON```.
 * Bit ```SCS``` (System Clock Select): selecciona la fuente de reloj del sistema (interna o externa).
 
 <p align="center">
-<img src="/labs/figs/lab02/osccon.png" alt="osc2" width="380">
+<img src="/labs/figs/lab02/osccon.png" alt="osc2" width="430">
 </p>
 <p align="center">
   Fig 5. Registro OSCCON <b>[1]</b>
