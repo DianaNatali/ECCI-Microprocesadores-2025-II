@@ -210,4 +210,6 @@ Por eso a veces se usa un cristal externo (ej. 16 MHz, 20 MHz) para tener una fr
 
 ## 6. Referencias
 
-**[1]**
+**[1]** Verle, M. (s.f.). Oscilador de Reloj. En Microcontroladores PIC – Programación en C con ejemplos. MikroElektronika. [Online]:  https://www.mikroe.com/ebooks/microcontroladores-pic-programacion-en-c-con-ejemplos/oscilador-de-reloj
+
+**[2]** Microchip Technology Inc. (s.f.). PICmicro Mid-Range MCU Family Reference Manual (Documento DS33023A). [Online]: de https://ww1.microchip.com/downloads/en/devicedoc/33023a.pdf
