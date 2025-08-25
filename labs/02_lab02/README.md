@@ -124,7 +124,7 @@ Por lo tanto, puede funcionar en distintos modos según el cristal o circuito us
 <img src="/labs/figs/lab02/external2.png" alt="osc2" width="350">
 </p>
 <p align="center">
-  Fig 4. Oscilador externo modo RC <b>[1]</b>
+  Fig 4. Señal externa <b>[1]</b>
 </p>
 
 #### 2. Oscilador interno:
