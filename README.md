@@ -30,7 +30,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <th>Deadline</th>
   </tr>
   <tr>
-    <td>1-2</td>
+    <td>1</td>
     <td>Instalación de herramientas</td>
     <td><a href="/labs/00_lab00/README.md">lab00</a></td>
     <td>-</td>
@@ -43,5 +43,13 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href=https://classroom.github.com/a/WPx70dFx>Link</a></td>
     <td> 11 de agosto</td>
   </tr>
+  <tr>
+    <td>3-4</td>
+    <td>Oscilador</td>
+    <td><a href="/labs/02_lab02/README.md">lab01</a></td>
+    <td><a >Link</a></td>
+    <td> 01 de septiembre</td>
+  </tr>
   </table>
+
 
