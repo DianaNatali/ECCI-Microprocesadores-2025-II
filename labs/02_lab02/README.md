@@ -112,7 +112,7 @@ Por lo tanto, puede funcionar en distintos modos según el cristal o circuito us
 * **RC**: oscilador empleando un circuito RC externo.
 
 <p align="center">
-<img src="/labs/figs/lab02/RC.png" alt="osc2" width="450">
+<img src="/labs/figs/lab02/RC.png" alt="osc2" width="550">
 </p>
 <p align="center">
   Fig 3. Oscilador externo modo RC <b>[1]</b>
