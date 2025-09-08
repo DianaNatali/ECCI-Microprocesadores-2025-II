@@ -113,7 +113,7 @@ Usa un registro extra llamado ```PR2``` que define hasta qué valor contar.
 
 Cuando ```Timer2``` llega al valor de $PR2$, se reinicia automáticamente a $0$ y se genera un “match” que controla el periodo del PWM.
 
-* **Registro ```PR2```**: Es el Period Register del ```Timer2```.
+* **Registro ```PR2```**: Es el *Period Register* del ```Timer2```.
 
     Como ```Timer2``` es de $8$ bits, ```PR2``` también es de $8$ bits (```0``` a ```255```).
 
