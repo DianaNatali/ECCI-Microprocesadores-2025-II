@@ -24,15 +24,14 @@
 
 ## 1. Objetivos de aprendizaje
 
-1. Configurar el oscilador interno del ```PIC18F45K22``` con ```PLL``` habilitado, para alcanzar una frecuencia de operación de 64 MHz.
 
-2. Implementar una señal PWM usando el módulo ```CCP1```, ajustando parámetros como el periodo y el ciclo útil (*duty cycle*) a través del temporizador 2.
+1. Implementar una señal PWM usando el módulo ```CCP1```, ajustando parámetros como el periodo y el ciclo útil (*duty cycle*) a través del temporizador 2.
 
-3. Configurar ```Timer0``` como temporizador de 16 bits con prescaler, para generar eventos periódicos de temporización con precisión.
+2. Configurar ```Timer0``` como temporizador de 16 bits con prescaler, para generar eventos periódicos de temporización con precisión.
 
-4. Usar interrupciones de ```Timer0``` para modificar automáticamente el ciclo útil del PWM, demostrando el control dinámico mediante hardware e interrupciones.
+3. Usar interrupciones de ```Timer0``` para modificar automáticamente el ciclo útil del PWM, demostrando el control dinámico mediante hardware e interrupciones.
 
-5. Leer el valor de un potenciómetro mediante el módulo ADC del microcontrolador y usarlo para ajustar el ciclo útil del PWM en tiempo real.
+4. Leer el valor de un potenciómetro mediante el módulo ```ADC``` del microcontrolador y usarlo para ajustar el ciclo útil del PWM en tiempo real.
 
 
 ## 2. Herramientas
@@ -92,10 +91,6 @@ $$ f = \dfrac{1}{\text{período}(T)} = \dfrac{1}{f}$$
 
 ### En el PIC 
 
-#### Oscilador interno y PLL
-
-El ```PIC18F45K22``` cuenta con un oscilador interno de $16$ MHz que puede ser multiplicado por $4$ mediante el uso del **PLL** (*Phase-Locked Loop*), lo cual permite una frecuencia de operación de hasta $64$ MHz. Esta frecuencia afecta todos los temporizadores, módulos PWM y ciclos de instrucción, por lo tanto, su correcta configuración es fundamental para un comportamiento preciso del sistema.
-
 #### Módulo PWM (CCP)
 
 El módulo ```CCP1``` permite generar una señal PWM cuyo periodo se define mediante el registro ```PR2``` y la frecuencia del ```Timer2```. El ciclo útil se ajusta mediante el registro ```CCPR1L```. La fórmula de la frecuencia de la señal PWM es:
@@ -115,7 +110,7 @@ El módulo ```ADC``` (*Analog-to-Digital Converter*) permite convertir una seña
 
 ## 4. Procedimiento
 
-Se desea generar una señal PWM con un ciclo de trabajo que aumente automáticamente en pasos, utilizando interrupciones del ```Timer0```. La señal debe observarse mediante un osciloscopio y tener un periodo visible (por ejemplo, $100$ ms entre cambios de ciclo útil). La frecuencia del sistema debe configurarse con el oscilador interno del PIC a $64$ MHz mediante el PLL.
+Se desea generar una señal PWM con un ciclo de trabajo que aumente automáticamente en pasos, utilizando interrupciones del ```Timer0```. La señal debe observarse mediante un osciloscopio y tener un periodo visible (por ejemplo, $100$ ms entre cambios de ciclo útil). 
 
 ### 4.1 Parte 1: 
 
@@ -123,100 +118,31 @@ Consiste en configurar el sistema  para operar a $64$ MHz usando el oscilador in
 
 #### Pasos:
 
-1. Configuración inicial del proyecto:
+1. Aceptar la tarea en GitHub Classroom.
 
-    * Crear un nuevo proyecto en MPLAB X.
+2. Crear proyecto en ```MPLAB X``` para PIC18F45K22 (o referencia seleccionada) y agregar el ```main.c``` base del ítem anterior.
 
-    * Configurar los fuses (bits de configuración) para establecer el uso del oscilador interno con PLL y desactivar el watchdog timer:
+3. Realizar el montaje:
 
-        ```
-        #pragma config FOSC = INTIO67
-        #pragma config PLLCFG = ON
-        #pragma config WDTEN = OFF
-        ```
+    <div align="center">
+     <img src="/labs/figs/lab03/pwm_pic1.png" alt="pwm" width="700" />
+     </div>
 
-    * Definir la frecuencia del sistema:
-    
-        ```
-        XTAL_FREQ como 64000000UL
-        ```
+4. Calcular el valor de recarga adecuado para 100 ms:
 
-2. Configuración del oscilador
+    * Frecuencia del sistema: 64 MHz → ciclo de instrucción = 64 MHz / 4 = 16 MHz
 
-    * Confirmar que el PLL (Phase-Locked Loop) esté activado mediante configuración de fuses.
+    * Periodo del ciclo: 1 / 16 MHz = 62.5 ns
 
-    * Usar el registro OSCCON para seleccionar el oscilador interno de $16$ MHz como fuente de reloj base:
+    * Para 100 ms: 100 ms / 62.5 ns = 1,600,000 ciclos
+
+    * Como TMR0 es 16-bit (0 a 65535), el valor a cargar sería: TMR0 = 65536 - 1600000 / 256 = 3036
 
     ```
-    OSCCON = 0b01110000;       // Oscilador interno a 16 MHz
-    OSCTUNEbits.PLLEN = 1;     // Activa PLL 
+    TMR0 = 3036;
     ```
 
-    * Verificar que el PLL efectivamente multiplica la frecuencia base ($16$ MHz) por $4$, resultando en un sistema de $64$ MHz.
-
-3. Configuración del módulo PWM (```CCP1```)
-
-    * Configurar el pin ```RC2``` como salida digital, ya que es donde se encuentra el módulo ```CCP1``` que generará la señal PWM.
-
-        ```
-        TRISC2 = 0; // Salida digital
-        ```CCP Modules
-
-    * Habilitar el modo PWM en el módulo ```CCP1``` a través del registro ```CCP1CON```:
-
-        ```
-        CCP1CON = 0b00001100; // Modo PWM activado
-        ```
-
-    * Configurar el ```Timer2```, que actúa como reloj base del PWM:
-
-        ```
-        PR2 = 255;            // Valor del periodo del PWM
-        T2CON = 0b00000111;   // Encender Timer2 con prescaler 1:16
-        ```
-
-
-
-4. Configuración del ```Timer0```: 
-
-    * Activar el ```Timer0``` en modo $16$ bits con prescaler $1$:$256$, para generar interrupciones cada $100$ ms:
-
-        ```
-        T0CON = 0b10000111;  // TMR0 ON, modo 16-bit, prescaler 1:256
-        ```
-
-    * Calcular el valor de recarga adecuado para 100 ms:
-
-        * Frecuencia del sistema: 64 MHz → ciclo de instrucción = 64 MHz / 4 = 16 MHz
-
-        * Periodo del ciclo: 1 / 16 MHz = 62.5 ns
-
-        * Para 100 ms: 100 ms / 62.5 ns = 1,600,000 ciclos
-
-        * Como TMR0 es 16-bit (0 a 65535), el valor a cargar sería: TMR0 = 65536 - 1600000 / 256 = 3036
-
-        ```
-        TMR0 = 3036;
-        ```
-
-    * Habilitar la interrupción de ```Timer0``` y las interrupciones globales:
-
-        ```
-        INTCONbits.TMR0IE = 1; // Habilita interrupción TMR0
-        INTCONbits.TMR0IF = 0; // Limpia bandera
-        INTCONbits.GIE = 1;    // Interrupciones globales ON    
-        ```
-
-5. Interrupción del ```Timer0```
-
-    * En la ```ISR```, incrementar el ciclo útil (valor de $0$ a $255$): Implementar la rutina de servicio de interrupción (```ISR```) para actualizar el cada $100$ ms:
-
-    * Reiniciar el ```Timer0```.
-
-    * Actualizar ```CCPR1L``` con el nuevo valor de ciclo útil.
-
-
-6. Modularizar el código embebido en:
+5. Modularizar el código embebido en:
 
     * Archivos de cabecera (```.h```) para definiciones y prototipos.
 
@@ -224,7 +150,7 @@ Consiste en configurar el sistema  para operar a $64$ MHz usando el oscilador in
 
     * Programa principal (```main.c```) para la lógica general del sistema.
 
-7. Medición con el osciloscopio
+6. Medir con el osciloscopio
 
     * Conectar la sonda del osciloscopio al pin ```RC2/CCP1```.
 
@@ -242,20 +168,28 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
 
 #### Pasos:
 
-1. Conectar el potenciómetro:
+1. Realizar el siguiente montaje:
 
-    * Terminal central a ```AN0``` (RA0)
+    <div align="center">
+    <img src="/labs/figs/lab03/pwm_pic.png" alt="pwm" width="850" />
+    </div>
 
-    * Extremos a VDD y GND
+
+    * Conexión del potenciómetro:
+
+        * Terminal central a ```AN0``` (RA0)
+
+        * Extremos a VDD y GND
 
 2. Configurar ADC:
+
     ```
     void ADC_Init(void) {
         ADCON0 = 0x01;     
         ADCON1 = 0x0E;     
         ADCON2 = 0xA9;    
     }
-    ```#42-paarte2
+    ```
     ```
     uint16_t ADC_Read(void) {
         ADCON0bits.GO = 1;              
@@ -274,20 +208,7 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
     }
     ```
 
-### Conexiones:
-
-
-### Parte 1: 
-<div align="center">
- <img src="/labs/figs/lab03/pwm_pic1.png" alt="pwm" width="700" />
- </div>
-
-### Parte 2: 
-<div align="center">
- <img src="/labs/figs/lab03/pwm_pic.png" alt="pwm" width="850" />
- </div>
-
-       
+      
 
 ## 5. Entregables
 
