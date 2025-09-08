@@ -212,7 +212,7 @@ El ADC convierte la tensión analógica entregada por el potenciómetro en un va
 
 ## 5. Entregables
 
-1. Realice las partes [1](#parte-1) y [2](#parte-2) mencionadas en el procedimiento y presente
+1. Realice las partes [1](#41-parte-1) y [2](#42-parte-2) mencionadas en el procedimiento y presente
 en clase las implementaciones de cada una al docente.
 
 2. Realice la respectiva documentación de la implementación llevada a cabo.
