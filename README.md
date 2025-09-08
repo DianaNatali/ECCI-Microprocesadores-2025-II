@@ -50,6 +50,13 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href=https://classroom.github.com/a/nqXAoXAE>Link</a></td>
     <td> 01 de septiembre</td>
   </tr>
+  <tr>
+    <td>4-5</td>
+    <td>Osciladores</td>
+    <td><a href="/labs/03_lab03/README.md">lab03</a></td>
+    <td><a href= >Link</a></td>
+    <td> 15 de septiembre</td>
+  </tr>
   </table>
 
 

@@ -48,8 +48,9 @@
 
 * Programador (PICkit $3$, PICkit $4$ o equivalente).
 
+* MPLAB X IDE con compilador XC8.
+
 * Fuente de alimentación de $5$ V → El PICkit $3$ o $4$ puede suministrar tensión directamente al circuito (típicamente $5$ V o $3.3$ V, según se configure en MPLAB X)
-MPLAB X IDE con compilador XC8.
 
 * Osciloscopio.
 
