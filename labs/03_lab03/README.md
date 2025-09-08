@@ -128,19 +128,19 @@ Consiste en configurar el sistema  para operar a $64$ MHz usando el oscilador in
      <img src="/labs/figs/lab03/pwm_pic1.png" alt="pwm" width="700" />
      </div>
 
-4. Calcular el valor de recarga adecuado para 100 ms:
+4. Calcular el valor de recarga adecuado para $100$ ms:
 
-    * Frecuencia del sistema: 64 MHz → ciclo de instrucción = 64 MHz / 4 = 16 MHz
+    * Frecuencia del sistema: $64$ MHz → ciclo de instrucción = $64$ MHz / $4$ = $16$ MHz
 
-    * Periodo del ciclo: 1 / 16 MHz = 62.5 ns
+    * Periodo del ciclo: $1$ / $16$ MHz = $62.5$ ns
 
-    * Para 100 ms: 100 ms / 62.5 ns = 1,600,000 ciclos
+    * Para $100$ ms: $100$ ms / $62.5$ ns = $1.600.000$ ciclos
 
-    * Como TMR0 es 16-bit (0 a 65535), el valor a cargar sería: TMR0 = 65536 - 1600000 / 256 = 3036
+    * Como ```TMR0``` es $16$-bit ($0$ a $65535$), el valor a cargar sería: ```TMR0``` = $65536$ - $1600000$ / $256$ = $3036$
 
-    ```
-    TMR0 = 3036;
-    ```
+        ```
+        TMR0 = 3036;
+        ```
 
 5. Modularizar el código embebido en:
 
