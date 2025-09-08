@@ -21,6 +21,8 @@
 
 #### 6. [Referencias](#6-referencias)
 
+------------------------------------------------------
+
 
 ## 1. Objetivos de aprendizaje
 
@@ -96,6 +98,31 @@ $$ f = \dfrac{1}{\text{período}(T)} = \dfrac{1}{f}$$
 El módulo ```CCP1``` permite generar una señal PWM cuyo periodo se define mediante el registro ```PR2``` y la frecuencia del ```Timer2```. El ciclo útil se ajusta mediante el registro ```CCPR1L```. La fórmula de la frecuencia de la señal PWM es:
 
 $$ f_{PWM} = \dfrac{f_{osc}}{4 \times TMR2_{prescaler} \times (PR2+1)}$$
+
+En los ```PIC18``` (como el ```PIC18F45K22```), existen varios temporizadores: ```Timer0```, ```Timer1```, ```Timer2```, ```Timer3```, etc.
+
+```Timer2``` es un temporizador de $8$ bits (cuenta de $0$ a $255$).
+
+Está pensado especialmente para trabajar con el módulo ```CCP``` (*Capture/Compare/PWM*), porque:
+
+* Tiene prescaler ($1$, $4$, $16$).
+
+* Tiene postscaler ($1$ a $16$).
+
+Usa un registro extra llamado ```PR2``` que define hasta qué valor contar.
+
+Cuando ```Timer2``` llega al valor de $PR2$, se reinicia automáticamente a $0$ y se genera un “match” que controla el periodo del PWM.
+
+* **Registro ```PR2```**: Es el Period Register del ```Timer2```.
+
+    Como ```Timer2``` es de $8$ bits, ```PR2``` también es de $8$ bits (```0``` a ```255```).
+
+    Lo que hace es definir el valor máximo hasta el cual ```Timer2``` cuenta antes de reiniciarse.
+
+    Eso, junto con el prescaler, determina el periodo de la señal PWM.
+
+    ⇒ Ejemplo:
+    Si ```PR2``` $= 249$, entonces ```Timer2``` cuenta de $0$ a $249$ y luego se reinicia.
 
 Se recomienda revisar la documentación [CCP Modules](https://www.mikroe.com/ebooks/pic-microcontrollers-programming-in-assembly/ccp-modules) de Microchip.
 

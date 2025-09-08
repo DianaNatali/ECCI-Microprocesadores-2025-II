@@ -1,12 +1,25 @@
 # Lab 01 – Blinker 
 
-## Objetivos de aprendizale
+## Índice:
+
+#### 1. [Objetivos de aprendizaje](#1-objetivos-de-aprendizaje)
+
+#### 2. [Herramientas](#2-herramientas)
+
+#### 3. [Procedimiento](#3-procedimiento)
+
+#### 4. [Entregables](#4-entregables)
+
+
+------------------------------------------------------
+
+## 1. Objetivos de aprendizale
 
 1. Familiarizarse con el uso del microcontrolador ```PIC18F45K22```, el entorno de desarrollo ```MPLAB X IDE``` y el programador PICkit, mediante la implementación de un programa sencillo que controle el parpadeo de un LED utilizando salidas digitales y retardos en lenguaje ```C```.
 2. Configurar un pin del PIC18F45K22 como salida digital.
 3. Controlar el encendido y apagado de un LED utilizando retardos de tiempo programados en lenguaje C con el compilador ```XC8```.
 
-## Herramientas
+## 2. Herramientas
 
 * Microcontrolador ```PIC18F45K22``` (o la referencia de PIC seleccionada) en tarjeta de desarrollo o protoboard.
 
@@ -22,7 +35,7 @@
 
 * Protoboard y cables de conexión.
 
-##  Procedimiento
+##  3. Procedimiento
 
 1. Realizar el montaje monstrado en la siguiente figura:
 
@@ -38,3 +51,10 @@
 5. Observar el parpadeo del LED.
 
 6. Modificar el tiempo de retardo para variar la frecuencia de parpadeo.
+
+## 4. Entregables
+
+1. Realice el [procedimiento](#4-procedimiento) y presente en clase las implementaciones de cada una al docente.
+
+2. Realice la respectiva documentación de la implementación llevada a cabo en su respectivo repositorio en Github Classroom.
+

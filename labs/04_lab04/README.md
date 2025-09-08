@@ -1,5 +1,21 @@
 # Lab04: Visualización en pantalla LCD de 16x2 
 
+
+## Índice:
+
+#### 1. [Objetivos de aprendizaje](#1-objetivos-de-aprendizaje)
+
+#### 2. [Herramientas](#2-herramientas)
+
+#### 3. [Fundamento](#3-fundamento)
+
+#### 4. [Procedimiento](#4-procedimiento)
+
+#### 5. [Entregables](#5-entregables)
+
+
+------------------------------------------------------
+
 ## 1. Objetivos de aprendizaje
   * Dominar el control básico de una pantalla LCD de $16$x$2$ para visualizar información estándar y caracteres personalizados en sistemas embebidos.
 
@@ -146,7 +162,7 @@ La CGRAM es una pequeña porción de memoria en la LCD (típicamente $64$ bytes)
 
 
 
-## Entregables
+## 5. Entregables
 
 1. Realice las partes [1](#parte-1) y [2](#parte-2) mencionadas en el procedimiento y presente
 en clase las implementaciones de cada una al docente.
