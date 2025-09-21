@@ -57,6 +57,17 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href=https://classroom.github.com/a/PJb_obg6 >Link</a></td>
     <td> 15 de septiembre</td>
   </tr>
+  <tr>
+    <td>6</td>
+    <td>Proyecto 1ra. entrega</td>
+    <td><a href=>Lineamientos</a></td>
+    <td><a href=https://classroom.github.com/a/3QuOhGOc >Link</a></td>
+    <td> 26 de septiembre</td>
+  </tr>
   </table>
+
+
+
+  
 
 
