@@ -22,7 +22,7 @@ Dominar el control básico de una pantalla LCD de 16x2 para visualizar informaci
 
   * Pantalla LCD de 16x2 (modo de 4 bits).
 
-  * Microcontrolador ```PIC18F25K22```.
+  * Microcontrolador ```PIC18F45K22```.
 
   * Protoboard y cables de conexión.
 
