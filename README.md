@@ -67,7 +67,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   <tr>
     <td>6-7</td>
     <td> Pantalla LCD 16x2 en modo paralelo</td>
-    <td><a href="/labs/04_lab04/README.md">lab05</a></td>
+    <td><a href="/labs/04_lab04/README.md">lab04</a></td>
     <td><a href="">Link </a></td>
     <td>29 de septiembre</td>
   </tr>
