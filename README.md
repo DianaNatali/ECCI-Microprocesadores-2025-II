@@ -68,7 +68,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td>6-7</td>
     <td> Pantalla LCD 16x2 en modo paralelo</td>
     <td><a href="/labs/04_lab04/README.md">lab04</a></td>
-    <td><a href="">Link </a></td>
+    <td><a href="https://classroom.github.com/a/lhiJu-1F">Link </a></td>
     <td>29 de septiembre</td>
   </tr>
   </table>
