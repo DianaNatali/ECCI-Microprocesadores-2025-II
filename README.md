@@ -64,6 +64,13 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href=https://classroom.github.com/a/3QuOhGOc >Link</a></td>
     <td> 26 de septiembre</td>
   </tr>
+  <tr>
+    <td>6-7</td>
+    <td> Pantalla LCD 16x2 en modo paralelo</td>
+    <td><a href="/labs/05_lab05/README.md">lab05</a></td>
+    <td><a href="https://classroom.github.com/a/W2b9BSvz">Link </a></td>
+    <td>29 de septiembre</td>
+  </tr>
   </table>
 
 
