@@ -28,11 +28,11 @@ Se debe diseñar e implementar un programa en el microcontrolador ```PIC```, don
 
 6. Practicar la organización de un proyecto modular, separando:
 
-    * Archivos de cabecera (.h)
+    * Archivos de cabecera (```.h```)
 
-    * Implementación de funciones (.c)
+    * Implementación de funciones (```.c```)
 
-    * Programa principal (main.c)
+    * Programa principal (```main.c```)
 
 ## Requerimientos técnicos
 
