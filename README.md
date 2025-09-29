@@ -52,7 +52,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   </tr>
   <tr>
     <td>4-5</td>
-    <td>PWM</td>
+    <td>PWM con timmers, interrupciones y ADC</td>
     <td><a href="/labs/03_lab03/README.md">lab03</a></td>
     <td><a href=https://classroom.github.com/a/PJb_obg6 >Link</a></td>
     <td> 15 de septiembre</td>
