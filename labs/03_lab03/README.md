@@ -1,4 +1,4 @@
-# Lab03: Generación de señal PWM con PIC (usando timmers e interrupciones)
+# Lab03: Generación de señal PWM con PIC (usando timmers, interrupciones ADC)
 
 ## Índice:
 

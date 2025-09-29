@@ -71,6 +71,13 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="https://classroom.github.com/a/lhiJu-1F">Link </a></td>
     <td>29 de septiembre</td>
   </tr>
+  <tr>
+    <td>8</td>
+    <td> Actividad evalutativa: LCD + ADC</td>
+    <td><a href="/labs/05_lab05/README.md">lab05</a></td>
+    <td><a href="">Link </a></td>
+    <td>29 de septiembre</td>
+  </tr>
   </table>
 
 
