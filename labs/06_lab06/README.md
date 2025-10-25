@@ -173,7 +173,8 @@ A continuación se enliastan algunos parámetros relevantes:
 
 ### Verificación con monitor serial
 
-Para observar los datos enviados por el PIC a través de UART, se debe usar un monitor serial. Aquí hay dos opciones comunes:
+#### Parte 1
+Para observar los datos enviados por el PIC a través de UART, se debe usar un monitor serial. Aquí hay varias opciones:
 
 * Opción 1: Usar PuTTY (Windows/Linux)
 
@@ -207,7 +208,36 @@ Para observar los datos enviados por el PIC a través de UART, se debe usar un m
 
 * Opción 3: Usar un Arduino
 
- Puedes utilizar el monitor serial de la IDE de Arduino.
+ Pueden utilizar el monitor serial de la IDE de Arduino.
+
+
+#### Parte 2
+
+ Otra forma de visualizar la comunicación serial es haciendo uso de un [script de Python](/labs/06_lab06/serial_pic.py), que recibe los datos enviados por el **PIC18** a través del puerto UART y los representa en tiempo real mediante la librería ```matplotlib```. Este script se abordara en clase.
+
+ Antes de ejecutar el script, debe verificarse el nombre del puerto serial al que está conectado el conversor USB a serial UART.
+
+ * En Windows, el puerto tiene formato COMx, por ejemplo:
+
+    ```
+     SERIAL_PORT = 'COM3'
+    ```
+    Pueden identificar el número desde el Administrador de dispositivos → Puertos (COM y LPT).
+
+* En Linux, el nombre del puerto suele ser:
+
+  ```
+  SERIAL_PORT = '/dev/ttyUSB0'
+  ```
+
+  o bien ```/dev/ttyACM0```, dependiendo del adaptador utilizado.
+
+  Pueden verificarlo ejecutando en la terminal:
+
+  ```
+  ls /dev/tty*
+  ```
+
         
 ### Conexiones:
 <div align="center">
