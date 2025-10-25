@@ -72,11 +72,17 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td>29 de septiembre</td>
   </tr>
   <tr>
-    <td>8</td>
+    <td>8-9</td>
     <td> Actividad evalutativa: LCD + ADC</td>
     <td><a href="/labs/05_lab05/README.md">lab05</a></td>
     <td><a href="https://classroom.github.com/a/2XTCcjMX">Link </a></td>
     <td>03 de octubre</td>
+  </tr>
+  <td>10-11</td>
+    <td> UART</td>
+    <td><a href="/labs/06_lab06/README.md">lab06</a></td>
+    <td><a href="">Link </a></td>
+    <td>27 de octubre</td>
   </tr>
   </table>
 
