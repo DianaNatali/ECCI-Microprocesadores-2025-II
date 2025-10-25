@@ -228,7 +228,7 @@ Para observar los datos enviados por el PIC a través de UART, se debe usar un m
 
  ## Entregables
 
-1. Lea la anterior documentación y presente en clase la implementación al docente.
+1. Lea la anterior guía y presente en clase la implementación al docente.
 
 2. Realice la respectiva documentación de la implementación llevada a cabo.
 
