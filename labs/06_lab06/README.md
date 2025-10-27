@@ -171,6 +171,25 @@ A continuación se enliastan algunos parámetros relevantes:
 10. Flag de interrupción de transmisión (```PIR1_bit4_R/W```): 1&rarr;Buffer de datos vacío, 0&rarr; Deshabilitado.
 
 
+<div align="center">
+ <img src="/labs/figs/lab06/RCSTA.png" alt="uart" width="850" />
+ </div>
+
+ <div align="center">
+ <img src="/labs/figs/lab06/TXSTA.png" alt="uart" width="850" />
+ </div>
+
+  <div align="center">
+ <img src="/labs/figs/lab06/BAUD.png" alt="uart" width="850" />
+ </div>
+
+   <div align="center">
+ <img src="/labs/figs/lab06/BAUD2.png" alt="uart" width="850" />
+ </div>
+
+
+
+
 ### Verificación con monitor serial
 
 #### Parte 1
