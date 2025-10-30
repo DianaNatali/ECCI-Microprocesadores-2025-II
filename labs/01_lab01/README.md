@@ -1,4 +1,4 @@
-# Lab 01 – Blinker 
+# Lab 01 – Blinker con microcontrolador PIC
 
 ## Índice:
 

@@ -1,4 +1,4 @@
-# Lab04: Visualización en pantalla LCD de 16x2 
+# Lab04: Visualización en pantalla LCD de 16x2 con microcontrolador PIC
 
 
 ## Índice:

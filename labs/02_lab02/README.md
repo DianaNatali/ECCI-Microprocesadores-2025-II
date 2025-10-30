@@ -1,4 +1,4 @@
-# Lab 02 – Caracterización de osciladores (externo vs. interno)
+# Lab 02 – Caracterización de osciladores (externo vs. interno) con microcontrolador PIC
 
 ## Índice:
 
