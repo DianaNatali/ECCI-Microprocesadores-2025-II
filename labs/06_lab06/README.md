@@ -18,11 +18,18 @@
 
 2. Fuente de alimentación (o PICkit 3/4).
 
-3. Conversor USB a serial UART (por ejemplo el CP2102).
+3. Conversor USB a serial UART.
+
+    <p align="center">
+    <img src="/labs/figs/lab06/conversor_serial.png" alt="alt text" width=600 >
+</p>
 
 4. Cable de conexión entre el conversor y el PC.
 
 5. Software de terminal serial (puede usar PuTTY, Tera Term, o cualquier terminal de comunicación serial).
+
+6. MPLAB X + XC8.
+
 
 
 ## Fundamento teórico
