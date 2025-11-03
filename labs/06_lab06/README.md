@@ -1,16 +1,26 @@
 # Lab06: Comunicación UART en microcontrolador PIC
 
-## Objetivos
+Índice:
 
-1. Configurar el módulo UART en un ```PIC18F45K22``` para permitir la comunicación serial.
+1. [Objetivos de aprendizaje](#1-objetivos-de-aprendizaje)
+2. [Materiales](#2-materiales)
+3. [Fundamento teórico](#3-fundamento-teórico)
+4. [Procedimiento](#4-procedimiento)
+5. [Entregables](#5-entregables)
 
-2. Transmitir datos a través del UART desde el PIC hacia un terminal serial conectado a través de USB-UART.
+-----------------------------------
 
-3. Implementar funciones de transmisión y recepción de datos a través de UART.
+## 1. Objetivos de aprendizaje
+
+1. Configurar el módulo **UART** en un microcontrolador ```PIC``` para permitir la comunicación serial.
+
+2. Transmitir datos a través del **UART** desde el PIC hacia un terminal serial conectado a través de USB-UART.
+
+3. Implementar funciones de transmisión y recepción de datos a través de **UART**.
 
 4. Visualizar los datos recibidos en el terminal y comprender el proceso de transmisión asíncrona.
 
-## Materiales
+## 2. Materiales
 
 1. PIC18F45K22 o cualquier PIC compatible.
 
@@ -32,7 +42,7 @@
 
 
 
-## Fundamento teórico
+## 3. Fundamento teórico
 
 El módulo **EUSART** (Enhanced Universal Synchronous Asynchronous Receiver Transmitter) del ```PIC18F45K22``` permite la comunicación serial tanto síncrona como asíncrona. En este laboratorio se usará en modo asíncrono (**UART**), que no requiere señal de reloj adicional y es muy común para comunicación con PCs u otros dispositivos.
 
@@ -61,9 +71,9 @@ A continuación se enliastan algunos parámetros relevantes:
 
 
 
-## Procedimiento
+## 4. Procedimiento
 
-### Descripción del funcionamiento del código en Github Classroom
+### Descripción de los códigos en [Github Classroom](https://classroom.github.com/a/kUypTlcB)
 
 🔹 Archivo ```uart.c``` – Implementación de la comunicación UART
 
@@ -199,7 +209,7 @@ A continuación se enliastan algunos parámetros relevantes:
 
 ### Verificación con monitor serial
 
-#### Parte 1
+#### 1. Parte 1
 Para observar los datos enviados por el PIC a través de UART, se debe usar un monitor serial. Aquí hay varias opciones:
 
 * Opción 1: Usar PuTTY (Windows/Linux)
@@ -237,7 +247,7 @@ Para observar los datos enviados por el PIC a través de UART, se debe usar un m
  Pueden utilizar el monitor serial de la IDE de Arduino.
 
 
-#### Parte 2
+#### 2. Parte 2
 
  Otra forma de visualizar la comunicación serial es haciendo uso de un [script de Python](/labs/06_lab06/serial_pic.py), que recibe los datos enviados por el **PIC18** a través del puerto UART y los representa en tiempo real mediante la librería ```matplotlib```. Este script se abordara en clase.
 
@@ -282,7 +292,7 @@ Para observar los datos enviados por el PIC a través de UART, se debe usar un m
  <img src="/laboratorios/figs/lab04/uart3.png" alt="pwm" width="850" />
  </div> -->
 
- ## Entregables
+ ## 5. Entregables
 
 1. Lea la anterior guía y presente en clase la implementación al docente.
 
