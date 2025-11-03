@@ -86,8 +86,8 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
   </tr>
   <td>10-11</td>
     <td> UART</td>
-    <td><a href="/labs/06_lab06/README.md">lab06</a></td>
-    <td><a href="https://classroom.github.com/a/kUypTlcB">Link </a></td>
+    <td><a href="/labs/07_lab07/README.md">lab07</a></td>
+    <td><a href="https://classroom.github.com/a/4IVWINxo">Link </a></td>
     <td>03 de noviembre</td>
   </tr>
   </table>

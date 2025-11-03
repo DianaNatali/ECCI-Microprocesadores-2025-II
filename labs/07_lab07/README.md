@@ -88,7 +88,7 @@ El módulo **PCF8574** suele tener una dirección base de $7$ bits igual a $0\ti
 
 ## 4. Procedimiento
 
-1. Acepte la tarea en Github Classroom y cree un proyecto en MPLAB X IDE con los código que se encontrarán allí.
+1. Acepte la tarea en [Github Classroom](https://classroom.github.com/a/4IVWINxo) y cree un proyecto en MPLAB X IDE con los código que se encontrarán allí.
 
 2. Realice la respectiva documentación de los códigos en Github Classroom.
 
