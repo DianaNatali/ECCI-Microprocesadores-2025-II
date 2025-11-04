@@ -32,6 +32,9 @@
 4. LCD $16×2$.
 
 5. Módulo I²C **PCF8574**.
+<p align="center">
+    <img src="/labs/figs/lab07/PCF8574.png" alt="alt text" width=250 >
+</p>
 
 6. Entorno de programación MPLAB X IDE con compilador XC8.
 

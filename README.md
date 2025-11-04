@@ -84,8 +84,8 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="https://classroom.github.com/a/kUypTlcB">Link </a></td>
     <td>27 de octubre</td>
   </tr>
-  <td>10-11</td>
-    <td> UART</td>
+  <td>12-13</td>
+    <td> Pantalla LCD 16x2 en modo I²C</td>
     <td><a href="/labs/07_lab07/README.md">lab07</a></td>
     <td><a href="https://classroom.github.com/a/4IVWINxo">Link </a></td>
     <td>03 de noviembre</td>
