@@ -108,7 +108,7 @@ El módulo **PCF8574** suele tener una dirección base de $7$ bits igual a $0\ti
 </p>
 
 
-4. Realice las mismas actividades que se plantearon para el [lab04 - LCD en modo paralelo](/labs/04_lab04/README.md), pero esta vez con LCD en modo **I2C**, es decir:
+4. Realice las mismas actividades que se plantearon para el [lab04 - LCD en modo paralelo](/labs/04_lab04/README.md), pero esta vez con LCD en modo **I²C**, es decir:
 
     * Texto estático.
     * Desplazamiento de string.
