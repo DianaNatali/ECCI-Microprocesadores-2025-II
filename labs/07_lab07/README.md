@@ -64,10 +64,15 @@ El siguiente diagrama representa el funcionamiento interno del módulo MSSP conf
 Incluye:
 
 ✔ Buffers de transmisión y recepción (SSPBUF y SSPSR)
+
 ✔ Detectores de Start/Stop, ACK, colisiones
+
 ✔ Control de reloj (Clock Gen)
+
 ✔ Generador de baudios
+
 ✔ Lógica para habilitar SDA y SCL
+
 ✔ Flags y registros de control (SSPCON1, SSPCON2, SSPSTAT, PIR1bits.SSPIF)
 
 <p align="center">
