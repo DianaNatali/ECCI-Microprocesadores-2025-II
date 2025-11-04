@@ -53,7 +53,11 @@ La comunicación se transmite en paquetes de bytes, con una dirección única pa
 
 La siguiente figura muestra la estructura de una transferencia típica en el bus I²C, donde se observa la condición de inicio, el envío de la dirección del dispositivo con el bit de lectura/escritura, el bit de reconocimiento (```ACK```) y finalmente la transmisión de datos seguida de la condición de parada.
 
-![I²C](/labs/figs/lab07/i2c.png)
+<p align="center">
+    <img src="/labs/figs/lab07/i2c.png" alt="alt text" width=500 >
+</p>
+
+
 
 La pantalla LCD $16\times2$ se controlará en este laboratorio mediante el protocolo I²C utilizando un expansor de puertos **`PCF8574**. Este enfoque reduce la cantidad de pines necesarios para la conexión, ya que utiliza únicamente dos líneas: ```SDA``` (datos) y ```SCL``` (reloj). 
 
