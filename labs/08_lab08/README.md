@@ -1,6 +1,6 @@
 # Lab08 - Actividad Evaluativa: Integración de ADC, LCD 16x2 con protocolo I²C y protocolo UART
 
-En esta actividad evaluativa, los estudiantes deberán combinar lo aprendido en el manejo del ADC (Conversor Analógico-Digital), el control de una pantalla LCD $16$x$2$ en modo I²C y el protocolo de comunicaciones UART (Universal Asynchronous Receiver-Transmitter ), para desarrollar un sistema embebido que permita visualizar en tiempo real una lectura analógica y mostrar información dinámica tanto en la pantalla como en una gráfica en tiempo real usando Python.
+En esta actividad evaluativa, los estudiantes deberán combinar lo aprendido en el manejo del ADC (Conversor Analógico-Digital), el control de una pantalla LCD $16\times 2$ en modo I²C y el protocolo de comunicaciones UART (Universal Asynchronous Receiver-Transmitter ), para desarrollar un sistema embebido que permita visualizar en tiempo real una lectura analógica y mostrar información dinámica tanto en la pantalla como en una gráfica en tiempo real usando Python.
 
 ## Descripción General
 
