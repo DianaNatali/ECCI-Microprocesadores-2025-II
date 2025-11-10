@@ -58,13 +58,6 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td> 15 de septiembre</td>
   </tr>
   <tr>
-    <td>6</td>
-    <td>Proyecto 1ra. entrega</td>
-    <td><a href=>Lineamientos</a></td>
-    <td><a href=https://classroom.github.com/a/3QuOhGOc >Link</a></td>
-    <td> 26 de septiembre</td>
-  </tr>
-  <tr>
     <td>6-7</td>
     <td> Pantalla LCD 16x2 en modo paralelo</td>
     <td><a href="/labs/04_lab04/README.md">lab04</a></td>
@@ -89,6 +82,13 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td><a href="/labs/07_lab07/README.md">lab07</a></td>
     <td><a href="https://classroom.github.com/a/4IVWINxo">Link </a></td>
     <td>03 de noviembre</td>
+  </tr>
+  <tr>
+    <td>8-9</td>
+    <td> Actividad evalutativa: LCD modo I²C + ADC + UART </td>
+    <td><a href="/labs/08_lab08/README.md">lab05</a></td>
+    <td><a href="">Link </a></td>
+    <td>10 de octubre</td>
   </tr>
   </table>
 

@@ -1,6 +1,6 @@
-# Lab05 - Actividad Evaluativa: Integración de ADC y LCD 16x2
+# Lab08 - Actividad Evaluativa: Integración de ADC, LCD 16x2 con protocolo I²C y protocolo UART
 
-En esta actividad evaluativa, los estudiantes deberán combinar lo aprendido en el manejo del ADC (Conversor Analógico-Digital) y el control de una pantalla LCD $16$x$2$ en modo paralelo, para desarrollar un sistema embebido que permita visualizar en tiempo real una lectura analógica y mostrar información dinámica en la pantalla.
+En esta actividad evaluativa, los estudiantes deberán combinar lo aprendido en el manejo del ADC (Conversor Analógico-Digital), el control de una pantalla LCD $16$x$2$ en modo I²C y el protocolo de comunicaciones UART (Universal Asynchronous Receiver-Transmitter ), para desarrollar un sistema embebido que permita visualizar en tiempo real una lectura analógica y mostrar información dinámica tanto en la pantalla como en una gráfica en tiempo real usando Python.
 
 ## Descripción General
 
@@ -10,9 +10,11 @@ Se debe diseñar e implementar un programa en el microcontrolador ```PIC```, don
 
 2. Convertir el valor digital obtenido en su equivalente en voltaje, tomando como referencia una $V_{ref}$ de $5.0$ V.
 
-2. El valor debe ser visualizado en la LCD $16$x$2$, utilizando comunicación en modo paralelo de $4$ bits.
+3. El valor debe ser visualizado en la LCD $16x2$, utilizando comunicación en modo I²C.
 
-3. Además de mostrar el valor numérico del ADC, se deberá incluir mensajes de texto dinámicos, con longitud mayor a $16$ caracteres, empleando corrimiento horizontal (scroll) para que el mensaje completo sea visible en la pantalla.
+4. Además de mostrar el valor numérico del ADC, se deberá incluir mensajes de texto dinámicos, con longitud mayor a $16$ caracteres, empleando corrimiento horizontal (scroll) para que el mensaje completo sea visible en la pantalla.
+
+5. Adicionalmente se debe integrar comunicación UART para la visualización de los valores de tensión usando un script de Python.
 
 ## Objetivos específicos
 
@@ -66,11 +68,15 @@ Ejemplo: Voltaje: 3.27V.
 
 * Implementar corrimiento horizontal de izquierda a derecha para visualizar todo el mensaje.
 
-#### Estructura de código
+### 3. Visualización en PC
 
-* **lcd.h / lcd.c**: Funciones para inicializar y controlar la LCD.
+A través de Python se debe observar en una gráfica las lecturas del potenciómetro en tiempo real.
 
-* **adc.h / adc.c**: Funciones para inicializar y leer valores del ADC.
 
-* **main.c**: Lógica principal, actualización de lectura y control de corrimiento del texto.
+### Adcional - bonus:
+
+1. Crear un pograma de encienda y apague un LED a través del protocolo UART, usando un monitor serial (p. ejem: Putty). Luego de esto en lugar de controlar un LED, controlar la generación de una señal PWM.
+
+2. Implementar un sensor analógico diferente al potenciómetro (p. ejem: Un sensor de temperatura) y ajustar la gráfica de Python a estas lecturas.
+
 
