@@ -10,7 +10,7 @@ Se debe diseñar e implementar un programa en el microcontrolador ```PIC```, don
 
 2. Convertir el valor digital obtenido en su equivalente en voltaje, tomando como referencia una $V_{ref}$ de $5.0$ V.
 
-3. El valor debe ser visualizado en la LCD $16x2$, utilizando comunicación en modo I²C.
+3. El valor debe ser visualizado en la LCD $16\times 2$, utilizando comunicación en modo I²C.
 
 4. Además de mostrar el valor numérico del ADC, se deberá incluir mensajes de texto dinámicos, con longitud mayor a $16$ caracteres, empleando corrimiento horizontal (scroll) para que el mensaje completo sea visible en la pantalla.
 
@@ -42,7 +42,7 @@ Se debe diseñar e implementar un programa en el microcontrolador ```PIC```, don
 
 * Configurar un canal analógico (ejemplo: ```AN0```) conectado a un potenciómetro.
 
-* Suponer una voltaje de referencia ($V_{ref}$ = $5.0$V).
+* Suponer una voltaje de referencia ($V_{ref}$ = $5.0$ V).
 
 * Calcular el voltaje según la fórmula:
 
