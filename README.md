@@ -84,7 +84,7 @@ Para más detalles sobre el microcontrolador utilizado en el curso, consultar la
     <td>03 de noviembre</td>
   </tr>
   <tr>
-    <td>8-9</td>
+    <td>14</td>
     <td> Actividad evalutativa: LCD modo I²C + ADC + UART </td>
     <td><a href="/labs/08_lab08/README.md">lab05</a></td>
     <td><a href="">Link </a></td>
